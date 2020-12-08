@@ -1,0 +1,20 @@
+.headers {
+    width: 100%;
+    height: 25px;
+    background-color: cornflowerblue;
+}
+a{
+    font-size: 30px
+    ;
+}
+a:hover{
+    background-color: red;
+}
+.content{
+    background-color: red;
+    width: 100%;
+    height: 50px;
+    
+    position: absolute;top: 250px;
+
+}

@@ -1,0 +1,16 @@
+.boarder{
+        boarder-collapse: collapse;
+        width: 100%;
+}
+.color{
+    background-color:green;
+}
+.color:hover{
+    background-color: blue;
+}
+.row:hover:nth-child(odd){
+    background-color: darkcyan;
+}
+.row:hover:nth-child(even){
+    background-color: gold;
+}
