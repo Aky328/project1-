@@ -1,0 +1,9 @@
+img{
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 50px;
+    height: 45px;
+    background-image:fit-content url("Elon_Musk_Royal_Society.jpg");
+    background-size:cover
+}

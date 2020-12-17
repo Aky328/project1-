@@ -7,11 +7,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../">
     <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <style>
+        @media(min-width: 576px) {
+            .demo{
+               background-color: aqua;
+                max-width: 50%;
+            }
+        }
+        @media(max-width: 576px ) {
+            .demo{
+                background-color: black;
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <form action="">
+    <!-- <form action="">
         <div class="form-group row">
             <label class="col-sm-3">USERNAME</label>
             <input class="col-sm-9" type="text">
@@ -21,7 +36,24 @@
             <input class="col-sm-9" type="text">
         </div>
         <button class="btn btn-primary">Login</button>
+    </form> -->
+    <p class="demo">Welcome</p>
+    <form action="">
+        <div>
+            <label>USERNAME</label>
+        </div>
+        <div>
+            <input class="form-control" type="text">
+        </div>
+        <div>
+            <label>PASSWORD</label>
+        </div>
+        <div>
+            <input class="form-control" type="text">
+        </div>
+            <button class="btn btn-dark">Enter</button>
     </form>
+    
 </body>
 
 </html>
