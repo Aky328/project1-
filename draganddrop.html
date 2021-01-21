@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div {
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px chocolate;
+        }
+    </style>
+    <script>
+        function allowdrop(ev) {
+            ev.preventDefault();
+        }
+        function drag(ev) {
+            ev.datatransfer.setData("text", ev.target.id)
+        }
+        function drop(ev) {
+            ev.preentdefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+
+<body>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+    <div id="drag" src="Elon_Musk_Royal_Society.jpg" draggable="true" width="400px" ; hight="200px" ;
+        ondragstart="drag(event)">
+
+    </div>
+</body>
+
+</html>
+<!-- will explain tom -->
